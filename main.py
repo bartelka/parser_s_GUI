@@ -9,7 +9,7 @@ w, h = 600, 300 #sirka a dlzka
 canvas = tk.Canvas(root, width = w, height = h)
 canvas.grid(columnspan=3, rowspan=3)
 
-logo = Image.open("ferrari_logo.png")
+logo = Image.open("logo.png")
 logo = ImageTk.PhotoImage(logo)
 logo_label = tk.Label(image=logo)
 logo_label.image = logo
@@ -35,7 +35,7 @@ def open_file():
 
 w, h = 10, 1 #sirka a dlzka tlacitka
 browse_text = tk.StringVar()
-browse_btn = tk.Button(root, textvariable=browse_text, command=lambda:open_file(), font="Raleway", bg="red", fg="white", height=h, width=w)
+browse_btn = tk.Button(root, textvariable=browse_text, command=lambda:open_file(), font="Raleway", bg="black", fg="white", height=h, width=w)
 browse_text.set("Prehľadávať")
 browse_btn.grid(column=1, row=2)
 
